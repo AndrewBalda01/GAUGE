@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+wheels/
+*.whl
+*.egg-link
+pip-wheel-metadata/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Editors / tools
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings (contains machine-specific paths)
+.claude/
+
+# Project-specific runtime artefacts
+eval-harness/runs.db
+eval-harness/reports/
+eval-harness/docs/assets/*.png
+local-inference/models/
+local-inference/results/
+observability/traces.db
+synthetic-data/output/
+
+# Keep example and docs PNGs committed
+!eval-harness/docs/assets/ci_checks.png
+!eval-harness/docs/assets/regression_report.png
+!eval-harness/docs/assets/run_comparison.png

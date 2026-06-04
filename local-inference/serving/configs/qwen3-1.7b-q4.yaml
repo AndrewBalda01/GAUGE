@@ -1,0 +1,9 @@
+name: qwen3-1.7b-q4
+backend: llama.cpp
+model_path: models/qwen3-1.7b-q4_k_m.gguf
+n_ctx: 4096
+n_gpu_layers: 0
+n_threads: 4
+size_class: small
+quant_bits: 4
+description: "Qwen3-1.7B Q4_K_M — good balance for simple tasks"

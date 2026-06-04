@@ -1,0 +1,8 @@
+name: mock-large
+backend: mock
+size_class: large
+quant_bits: 8
+tokens_per_second: 25.0
+ttft_ms: 150.0
+response_template: "Detailed answer: '{prompt}' — this requires careful legal analysis."
+description: "Mock large model — for CI and integration tests"

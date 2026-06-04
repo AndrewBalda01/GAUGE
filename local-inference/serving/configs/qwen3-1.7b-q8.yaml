@@ -1,0 +1,9 @@
+name: qwen3-1.7b-q8
+backend: llama.cpp
+model_path: models/qwen3-1.7b-q8_0.gguf
+n_ctx: 4096
+n_gpu_layers: 0
+n_threads: 4
+size_class: small
+quant_bits: 8
+description: "Qwen3-1.7B Q8_0 — higher quality, more VRAM"

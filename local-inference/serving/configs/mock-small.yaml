@@ -1,0 +1,8 @@
+name: mock-small
+backend: mock
+size_class: small
+quant_bits: 4
+tokens_per_second: 80.0
+ttft_ms: 60.0
+response_template: "The answer to '{prompt}' involves key legal principles."
+description: "Mock small model — for CI and integration tests"

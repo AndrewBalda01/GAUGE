@@ -1,0 +1,8 @@
+{
+  "name": "legal_qa",
+  "version": "v1",
+  "sha256": "c204c21e53df99a033c026a1893cd99441fe20861beb26b98a2ef2bfb81ea140",
+  "case_count": 60,
+  "created_at": "2026-06-04T07:26:26.934985+00:00",
+  "description": "Legal Q&A evaluation dataset \u2014 contract, tort, criminal, IP, privacy, property law."
+}

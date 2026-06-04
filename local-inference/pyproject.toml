@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-inference"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111",
+    "uvicorn[standard]>=0.29",
+    "pydantic>=2.0",
+    "httpx>=0.27",
+    "anyio>=4.0",
+    "pyyaml>=6.0",
+    "psutil>=5.9",
+    "matplotlib>=3.8",
+    "rich>=13.0",
+    "click>=8.1",
+    "python-dotenv>=1.0",
+    # llama-cpp-python is installed separately (platform-specific wheel)
+    # pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "httpx>=0.27",   # for TestClient
+    "ruff>=0.4",
+]
+
+[project.scripts]
+infer = "api.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["serving*", "benchmark*", "router*", "api*", "report*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
