@@ -43,9 +43,6 @@ coverage.xml
 .DS_Store
 Thumbs.db
 
-# Claude Code local settings (contains machine-specific paths)
-.claude/
-
 # Project-specific runtime artefacts
 eval-harness/runs.db
 eval-harness/reports/
