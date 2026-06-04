@@ -23,11 +23,11 @@ A monorepo of four interconnected projects that together demonstrate the full en
 ┌─────────────────────────────────────────────────────────────────────┐
 │                         MONOREPO OVERVIEW                           │
 │                                                                     │
-│  ┌──────────────────┐        quality scores        ┌────────────┐   │
-│  │  02 Local        │ ◄───────────────────────────  │ 01 Eval    │  │
-│  │  Inference       │                               │ Harness    │  │
-│  │  + Router        │ ──── endpoint calls ────────► │            │  │
-│  └──────┬───────────┘                               └─────┬──────┘  │
+│  ┌──────────────────┐        quality scores        ┌─────────────┐  │
+│  │  02 Local        │ ◄─────────────────────────── │ 01 Eval     │  │
+│  │  Inference       │                              │ Harness     │  │
+│  │  + Router        │ ──── endpoint calls ────────►│             │  │
+│  └──────┬───────────┘                              └─────┬───────┘  │
 │         │                                                 │         │
 │         │ traces (spans)                    test data     │         │
 │         ▼                                                 ▼         │
