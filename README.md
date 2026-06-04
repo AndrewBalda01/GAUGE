@@ -27,7 +27,7 @@ A monorepo of four interconnected projects that together demonstrate the full en
 │  │  02 Local        │ ◄─────────────────────────── │ 01 Eval     │  │
 │  │  Inference       │                              │ Harness     │  │
 │  │  + Router        │ ──── endpoint calls ────────►│             │  │
-│  └──────┬───────────┘                              └─────┬───────┘  │
+│  └──────┬───────────┘                              └──────┬──────┘  │
 │         │                                                 │         │
 │         │ traces (spans)                    test data     │         │
 │         ▼                                                 ▼         │
